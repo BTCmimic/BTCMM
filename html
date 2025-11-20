@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crypto Mining Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Crypto Mining Dashboard</h1>
+            <p>Mine tokens and earn rewards every 10 minutes!</p>
+        </header>
+
+        <div class="miner-login">
+            <h2>Miner Login</h2>
+            <input type="text" id="minerName" placeholder="Enter Miner Username" />
+            <button onclick="loginMiner()">Login</button>
+        </div>
+
+        <div class="dashboard" style="display: none;">
+            <div class="miner-info">
+                <h2>Welcome, <span id="minerDisplayName"></span></h2>
+                <p>Current Tokens: <span id="minerTokens">0</span> Tokens</p>
+            </div>
+
+            <div class="mining-stats">
+                <p>Next Reward Allocation in: <span id="countdown">10:00</span></p>
+            </div>
+
+            <div class="reward-status">
+                <button onclick="mineTokens()">Mine Tokens</button>
+                <p id="rewardStatus"></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 CryptoMine. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
